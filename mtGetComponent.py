@@ -172,7 +172,7 @@ def optimalFunc(Lectin, Book={}, orderBook=[], MF=np.empty(shape=(404, 1), dtype
 	m = 178
 	n = 226
 	nthreads = nthreads
-	nCol = data.shape[1]
+	nCol = Lectin.shape[1]
 	Book = rmNoSenceFeature(Lectin, Book)
 	while len(Book) < nCol:
 		Freq.clear()
